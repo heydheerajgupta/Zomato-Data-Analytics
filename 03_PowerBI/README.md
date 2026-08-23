@@ -9,7 +9,7 @@ The project analyzes restaurant distribution, ratings, cuisines, locations, pric
 # 📊 Power BI Dashboard
 
 <p align="center">
-  <img src="PowerBi Dashboard.png" alt="Zomato Power BI Dashboard" width="100%">
+  <img src="PowerBi%20Dashboard.png" alt="Zomato Power BI Dashboard" width="100%">
 </p>
 
 ---
