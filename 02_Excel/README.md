@@ -1,67 +1,96 @@
-# 🍽️ Zomato Data Analysis — Excel
+# 📊 Zomato Analysis — Excel
 
-An Excel-based restaurant data analysis project developed as part of an end-to-end Zomato Data Analytics project.
-
-The analysis focuses on restaurant distribution, restaurant opening trends, ratings, cuisines, pricing, table booking and online delivery availability.
-
----
-
-## 📊 Dashboard Preview
-
-![Zomato Excel Dashboard](Excel_Dashboard.png)
+An end-to-end **Zomato Restaurant Data Analysis project developed using Microsoft Excel** to analyze restaurant distribution, ratings, cuisines, pricing, locations, and service availability.
 
 ---
 
 ## 🎯 Project Objective
 
-The objective of this Excel analysis is to transform raw Zomato restaurant data into meaningful business insights using Microsoft Excel.
+The objective of this Excel analysis is to transform Zomato restaurant data into meaningful business insights using data cleaning, data modeling, calculations, Pivot Tables, charts, and an interactive dashboard.
 
-The analysis covers:
+The analysis focuses on:
 
-- Restaurant distribution across countries and cities
+- Restaurant distribution by country and city
 - Restaurant opening trends over time
-- Restaurant ratings and rating categories
-- Average cost for two in USD
+- Restaurant ratings
+- Average cost for two
 - Table booking availability
 - Online delivery availability
 - Popular cuisines
-- Top cities by restaurant count
+- Restaurant pricing
+- City-wise restaurant distribution
 
 ---
 
-## 🛠️ Tool Used
+## 🗂️ Dataset
 
-| Tool | Purpose |
+The project uses the Zomato restaurant dataset containing information related to:
+
+- Restaurant ID
+- Restaurant Name
+- Country
+- City
+- Address
+- Locality
+- Locality Verbose
+- Longitude
+- Latitude
+- Cuisines
+- Currency
+- Table Booking
+- Online Delivery
+- Is Delivering Now
+- Switch to Order Menu
+- Price Range
+- Votes
+- Average Cost for Two
+- Rating
+- Restaurant Opening Date
+
+The original dataset is available in the:
+
+**`01_Raw-Data`** folder.
+
+---
+
+## 🛠️ Tools & Techniques
+
+| Tool / Technique | Purpose |
 |---|---|
-| Microsoft Excel | Data cleaning, data modeling, analysis and dashboard development |
+| Microsoft Excel | Data analysis and dashboard development |
+| Power Query | Data cleaning and transformation |
+| Data Model | Data modeling |
+| Pivot Tables | Data aggregation and analysis |
+| Pivot Charts | Data visualization |
+| Slicers | Interactive filtering |
+| Calculated Columns | Data transformation |
+| Calendar Table | Date-based analysis |
 
 ---
 
-## 📁 Files
+## 🔄 Data Preparation
 
-### Excel Analysis Workbook
+The dataset was prepared and transformed in Excel before performing the analysis.
 
-[📊 Excel Zomato Final.xlsx](Excel%20Zomato%20Final.xlsx)
+### Major preparation activities
 
-### Dashboard
-
-The Excel dashboard is displayed above and is also available as:
-
-[🖼️ Excel Dashboard](Excel_Dashboard.png)
+1. Data cleaning
+2. Data transformation
+3. Data modeling
+4. Calendar table creation
+5. Date-based calculations
+6. Currency conversion
+7. Restaurant rating categorization
+8. Average price bucketing
+9. Restaurant service analysis
 
 ---
 
-## 📋 Analysis Performed
+## 📅 Calendar Table
 
-### 1. Data Modeling
+A Calendar Table was created using the restaurant opening date.
 
-Built a data model using the available sheets in the Excel dataset.
-
-### 2. Calendar Table
-
-Created a calendar table using the restaurant opening date information.
-
-The calendar analysis includes:
+The Calendar Table contains:
 
 - Year
 - Month Number
@@ -73,79 +102,29 @@ The calendar analysis includes:
 - Financial Month
 - Financial Quarter
 
-### 3. Currency Conversion
+### Financial Calendar
 
-Converted the Average Cost for Two from local currencies into USD using the available currency information.
+The financial year was structured as:
 
-### 4. Restaurant Count Analysis
+**April = FM1 → March = FM12**
 
-Analyzed the number of restaurants based on:
-
-- City
-- Country
-
-### 5. Restaurant Opening Analysis
-
-Analyzed restaurant openings by:
-
-- Year
-- Quarter
-- Month
-
-### 6. Restaurant Rating Analysis
-
-Analyzed restaurant counts based on average ratings and rating categories.
-
-### 7. Average Cost Buckets
-
-Created price buckets based on the Average Cost for Two and analyzed the number of restaurants within each price range.
-
-### 8. Table Booking Analysis
-
-Analyzed the percentage of restaurants that provide table booking facilities.
-
-### 9. Online Delivery Analysis
-
-Analyzed the percentage of restaurants that provide online delivery.
-
-### 10. Cuisine Analysis
-
-Analyzed restaurant distribution based on cuisines and identified the most popular cuisines.
-
-### 11. City Analysis
-
-Analyzed restaurant concentration across cities and identified the top cities by restaurant count.
+Financial quarters were created based on the financial month.
 
 ---
 
-## 📈 Dashboard Visualizations
+## 💱 Currency Conversion
 
-The Excel dashboard contains the following visualizations:
+The original **Average Cost for Two** values were provided in different local currencies.
 
-- Table Booking Percentage
-- Restaurant Opening by Year
-- Restaurants by Average Rating
-- Online Delivery Percentage
-- Top 5 Restaurants by City
-- Top 10 Cuisines
+The values were converted into **USD** to allow consistent comparison and analysis across countries.
 
----
+### Dashboard KPI
 
-## 🔎 Interactive Filters
-
-The dashboard provides interactive filtering using:
-
-- Year
-- Country
-- Restaurant Rating Bucket
-
-These filters allow the analysis to be explored dynamically.
+**Average Cost for Two (USD): 10.09**
 
 ---
 
-## 📊 Key Dashboard KPIs
-
-The Excel dashboard highlights the following key metrics:
+# 📊 Key Performance Indicators
 
 | KPI | Value |
 |---|---:|
@@ -157,53 +136,160 @@ The Excel dashboard highlights the following key metrics:
 
 ---
 
-## 💡 Key Insights
+# 📈 Analysis Performed
 
-The Excel analysis provides a consolidated view of:
+## 1. Restaurant Count by City and Country
+
+Analyzed the number of restaurants across different countries and cities to understand restaurant distribution.
+
+---
+
+## 2. Restaurant Opening by Year
+
+Analyzed restaurant openings by year to identify restaurant growth and opening trends over time.
+
+---
+
+## 3. Restaurant Rating Analysis
+
+Restaurants were categorized into rating buckets:
+
+- Average (1–2)
+- Good (2–3)
+- Very Good (3–4)
+- Excellent (4–5)
+
+---
+
+## 4. Average Price Analysis
+
+Restaurants were grouped into price buckets to understand how restaurants are distributed across different price ranges.
+
+---
+
+## 5. Table Booking Analysis
+
+Analyzed the percentage of restaurants that provide table booking facilities.
+
+---
+
+## 6. Online Delivery Analysis
+
+Analyzed the percentage of restaurants that provide online delivery.
+
+---
+
+## 7. Cuisine Analysis
+
+Analyzed restaurant counts by cuisine and identified the most popular cuisines.
+
+---
+
+## 8. City Analysis
+
+Identified the cities with the highest number of restaurants.
+
+---
+
+# 📊 Excel Dashboard
+
+The Excel dashboard provides an interactive summary of the Zomato restaurant analysis.
+
+### Dashboard KPIs
+
+- Total Restaurants
+- Total Countries
+- Total Cities
+- Average Rating
+- Average Cost for Two (USD)
+
+### Dashboard Visualizations
+
+- Table Booking Percentage
+- Restaurant Opening by Year
+- Restaurants by Average Rating
+- Online Delivery Percentage
+- Top 5 Restaurants by City
+- Top 10 Cuisines
+
+### Interactive Filters
+
+- Year
+- Country
+- Restaurant Rating Bucket
+
+---
+
+# 🖼️ Dashboard Preview
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/hey dheerajgupta/Zomato-Data-Analytics/main/02_Excel/Excel_Dashboard.png" alt="Zomato Excel Dashboard" width="100%">
+</p>
+
+---
+
+## 📌 Dashboard Highlights
+
+The dashboard provides a visual overview of:
+
+- **9,551 total restaurants**
+- **15 countries**
+- **141 cities**
+- **2.89 average rating**
+- **10.09 average cost for two in USD**
+- Table booking availability
+- Online delivery availability
+- Restaurant opening trends
+- Rating distribution
+- Top restaurant cities
+- Top cuisines
+
+---
+
+# 💡 Key Insights
+
+The Excel analysis provides insights into:
 
 - Restaurant distribution across countries and cities
-- Restaurant opening patterns over time
+- Restaurant opening trends over time
 - Restaurant rating distribution
 - Table booking availability
 - Online delivery availability
 - Popular cuisines
-- Major restaurant cities
-- Average restaurant pricing
+- Restaurant pricing patterns
+- Major restaurant markets
 
 ---
 
-## 🧩 Skills Demonstrated
+# 📁 Project Files
 
-- Data Cleaning
-- Data Transformation
-- Data Modeling
-- Calendar Table Creation
-- Currency Conversion
-- Excel Formulas
-- Pivot Tables
-- Data Analysis
-- Interactive Filters
-- Dashboard Development
-- Data Visualization
-- Business Insights
+| File | Description |
+|---|---|
+| `Excel_Zomato Final.xlsx` | Complete Excel analysis and dashboard |
+| `Excel_Dashboard.png` | Dashboard preview image |
+| `README.md` | Excel project documentation |
 
 ---
 
-## 📂 Project Structure
+# 🔄 Excel Analysis Workflow
 
 ```text
-Zomato-Data-Analytics
-│
-├── 01_Raw-Data
-│   └── Zomato_Dataset.xlsx
-│
-├── 02_Excel
-│   ├── Excel Zomato Final.xlsx
-│   ├── Excel_Dashboard.png
-│   └── README.md
-│
-├── 03_PowerBI
-├── 04_SQL
-├── 05_Tableau
-│
-└── README.md
+Raw Zomato Data
+       ↓
+Data Cleaning
+       ↓
+Data Transformation
+       ↓
+Data Modeling
+       ↓
+Calendar Table
+       ↓
+Currency Conversion
+       ↓
+Data Analysis
+       ↓
+Pivot Tables & Charts
+       ↓
+Interactive Dashboard
+       ↓
+Business Insights
