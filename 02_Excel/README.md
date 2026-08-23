@@ -177,27 +177,3 @@ The Excel analysis provides insights into:
 | `Excel_Dashboard.png` | Zomato Excel dashboard preview |
 | `README.md` | Excel project documentation |
 
-### 📊 Excel Workbook
-
-[Open Excel Zomato Final.xlsx](Excel%20Zomato%20Final.xlsx)
-
----
-
-## 📁 Project Structure
-
-```text
-Zomato-Data-Analytics
-│
-├── 01_Raw-Data
-│   └── Zomato_Dataset.xlsx
-│
-├── 02_Excel
-│   ├── Excel Zomato Final.xlsx
-│   ├── Excel_Dashboard.png
-│   └── README.md
-│
-├── 03_PowerBI
-├── 04_SQL
-├── 05_Tableau
-│
-└── README.md
