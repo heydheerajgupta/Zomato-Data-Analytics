@@ -155,38 +155,3 @@ The Tableau analysis helps understand:
 | `Tableau Dashboard.png` | Dashboard preview image |
 | `README.md` | Tableau project documentation |
 
-### 📊 Tableau Workbook
-
-[Open Tableau Zomato Final.twbx](./Tableau%20Zomato%20Final.twbx)
-
----
-
-## 📁 Project Structure
-
-```text
-Zomato-Data-Analytics
-│
-├── 01_Raw-Data
-│   └── Zomato_Dataset.xlsx
-│
-├── 02_Excel
-│   ├── Excel Zomato Final.xlsx
-│   ├── Excel_Dashboard.png
-│   └── README.md
-│
-├── 03_PowerBI
-│   ├── Power Bi Zomato Final.pbix
-│   ├── PowerBi Dashboard.png
-│   └── README.md
-│
-├── 04_SQL
-│   ├── SQL Zomato fianl Project.sql
-│   ├── Zomato Dump File.sql
-│   └── README.md
-│
-├── 05_Tableau
-│   ├── Tableau Zomato Final.twbx
-│   ├── Tableau Dashboard.png
-│   └── README.md
-│
-└── README.md
